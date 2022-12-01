@@ -132,3 +132,8 @@ L'admin doit pouvoir naviguer de son interface au site classique. Il doit avoir 
 - Vous serez également attendu sur un front clair et lisible. Bootstrap et autres library sont autorisées. Utilisez des couleurs, des typos qui rendront votre projet lisible. 
 
 Merci d'ajouter un dossier SQL a la racine de votre projet et d'y joindre l'export de votre base de données
+
+## Rendu le Dimanche 04/12/2022 a 23h59 max
+> mail : c.dev.jenny@gmail.com
+> objet : ipssi-rendu-symfony
+> contenu : Vos noms et prénoms, archive github (Avec la base de données en SQL comme précisé ci dessus svp)
