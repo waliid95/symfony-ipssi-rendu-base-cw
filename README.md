@@ -11,7 +11,7 @@
 
 ### Clone
 
-    git clone https://github.com/CDevJenny/symfony-ipssi.git
+    git clone https://github.com/CDevJenny/symfony-ipssi-rendu-base
 
 ### Create env file
 
@@ -25,13 +25,16 @@
 ### Create DB
     symfony console doctrine:database:create
 > Crée la base de données renseignée dans .env.local
+
     symfony console doctrine:schema:update --force
 > Met à jour la structure de vos entités dans votre base de données
 ## Front installation
     npm install
 > Installe les dépendances NPM depuis le package.json
+
     npm run build
-> Build vos fichiers assets dans votre dossier public/assets 
+> Build vos fichiers assets dans votre dossier public/assets
+
     npm run watch
 > Refresh les changements apportés en css et js dans vos dossiers assets/styles en direct sans avoir a relancer un build
 
@@ -51,17 +54,22 @@
 ### Commandes make génériques
     symfony console make:entity
 > Ouvre le menu de création/édition de vos entités. Génére une class dans vos Entity et un repository associé
+
     symfony console make:form
 > Crée un fichier dans votre dossier Form pour générer des formulaires
+
     symfony console make:controller
 > Crée un fichier controller ainsi qu'un template associé dans vos templates twig
+
     symfony console make:crud
 > Crée un controller et y génère des fonctions CRUD pour l'entité de votre choix, génère également les templates correspondants
 ### Commandes 
     symfony console make:user
 > Crée une entité User avec un password hasher associé
+
     symfony console make:auth
 > Crée un système de connexion avec votre entité User précédemment généré ainsi qu'un template twig de login
+
     symfony console make:registration-form
 > Crée un formulaire de d'inscription pour votre Entité User
 
@@ -75,10 +83,13 @@ Le projet est mini site e-commerce composé de :
 - Category
 - User (Client/Vendeur/Admin)
 - Cart
-Les articles et produits doivent avoir une option de statut, publié ou brouillon. Ils doivent pas etre affiché hors partie admin si ils sont en brouillon. 
+- Les articles et produits doivent avoir une option de statut, publié ou brouillon. Ils doivent pas etre affiché hors partie admin si ils sont en brouillon. 
 
 ### Un menu de navigation en haut de page 
 - Les pages doivent y etre renseignées, ainsi que les options de connexion et de navigation selon les roles et permissions ainsi qu'un lien vers le panier de l'utilisateur.
+
+### Une page d'inscription 
+- Nom, prénom, email, mot de passe et statut désiré. Vendeur ou Client
 
 ### Une page d'accueil accessible sans connexion 
 - Elle doit renvoyer les 3 derniers articles du plus récent au plus ancien. Vos articles doivent avoir un titre, un contenu, un auteur, une date de création et d'édition.
@@ -96,7 +107,8 @@ Les articles et produits doivent avoir une option de statut, publié ou brouillo
 ### Une page profil accessible avec connexion et seulement par l'utilisateur connecté actuellement
 - Elle doit lister les infos de l'utilisateur, nom, prénom, email, statut. Ses produits si il est vendeur. 
 - La page doit également renvoyer vers l'edition des infos de l'utilisateur d'une part(nom, prénom, email), et l'édition de son mot de passe d'autre part. Ces formulaires et pages doivent etre indépendants. 
-- Si il est vendeur, il doit pouvoir accéder à la création d'un produit, l'édition et suppression des siens. 
+- Si il est vendeur, il doit pouvoir accéder à la création d'un produit, l'édition et suppression des siens.
+- Si il est client, il doit pouvoir choisir de devenir Vendeur depuis l'édition de son profil 
 
 ### Une page panier accessible avec connexion
 - Les utilisateurs doivent avoir accès à leur panier. Listant, les produits ajoutés à leur panier et la quantité associée ainsi que l'option personnalisée choisie.
