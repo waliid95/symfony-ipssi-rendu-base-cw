@@ -118,3 +118,5 @@ L'admin doit pouvoir naviguer de son interface au site classique. Il doit avoir 
 > Exemple : https://github.com/utilisateur/symfony-ipssi-rendu-cj-cj
 - Vous serez notés sur la qualité du nommage de vos commit, de vos fichiers, de vos fonctions, de vos routes et la cohérence de l'ensemble. Soyez logiques et organisés.
 - Vous serez également attendu sur un front clair et lisible. Bootstrap et autres library sont autorisées. Utilisez des couleurs, des typos qui rendront votre projet lisible. 
+
+Merci d'ajouter un dossier SQL a la racine de votre projet et d'y joindre l'export de votre base de données
